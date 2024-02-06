@@ -1,0 +1,618 @@
+@charset "utf-8";
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #f9ecd9;
+  z-index: 99;
+}
+
+#splash {
+  /*fixedで全面に固定*/
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #333;
+}
+
+/* 回転 */
+.fluid {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.fluid_obj {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+.fluid_obj.obj01 {
+  background: #f8e193;
+  animation: fluidrotate 20s ease 0s infinite;
+}
+.fluid_obj.obj02 {
+  border: 2px solid #f0cf5e;
+  animation: fluidrotate_04 20s ease 0s infinite;
+}
+@keyframes fluidrotate {
+  0%,
+  100% {
+    border-radius: 59% 41% 26% 74% / 43% 56% 44% 57%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 59% 41% 26% 74% / 43% 56% 44% 57%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+
+@keyframes fluidrotate_02 {
+  0%,
+  100% {
+    top: -20px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    top: 0px;
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes fluidrotate_03 {
+  0%,
+  100% {
+    bottom: 0px;
+    right: 15px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    bottom: -15px;
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  42% {
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  56% {
+    right: -10px;
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  70% {
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  84% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+}
+@keyframes fluidrotate_04 {
+  0%,
+  100% {
+    top: -15px;
+    right: 15px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  28% {
+    right: 35px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  42% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  56% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  70% {
+    top: 0px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  84% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+}
+.fluid {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.fluid_obj {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.fluid_obj.obj01 {
+  background: #fffae3;
+  animation: fluidrotate 20s ease 0s infinite;
+}
+.fluid_obj.obj02 {
+  border: 2px solid rgba(51, 33, 0, 0.25);
+  animation: fluidrotate_04 20s ease 0s infinite;
+}
+@keyframes fluidrotate {
+  0%,
+  100% {
+    border-radius: 59% 41% 26% 74% / 43% 56% 44% 57%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 59% 41% 26% 74% / 43% 56% 44% 57%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+
+@keyframes fluidrotate_02 {
+  0%,
+  100% {
+    top: -20px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    top: 0px;
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes fluidrotate_03 {
+  0%,
+  100% {
+    bottom: 0px;
+    right: 15px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    bottom: -15px;
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  42% {
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  56% {
+    right: -10px;
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  70% {
+    border-radius: 91% 9% 9% 91% / 43% 50% 50% 57%;
+  }
+  84% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+}
+@keyframes fluidrotate_04 {
+  0%,
+  100% {
+    top: -15px;
+    right: 15px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  28% {
+    right: 35px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  42% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  56% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  70% {
+    top: 0px;
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  84% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+}
+
+/* コンセプト */
+.concept {
+  margin: 0 auto;
+  max-width: 1120px;
+  margin-top: 100px;
+}
+
+.concept_heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.concept_heading p {
+  font-size: 12px;
+}
+
+.concept_text1 {
+  position: relative;
+  margin-top: -50px;
+  height: 360px;
+  width: 450px;
+  background-image: url(../images/Concept1@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.concept_text1 p {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+
+.concept_text2 {
+  position: relative;
+  margin-top: -150px;
+  margin-left: auto;
+  margin-bottom: -50px;
+  height: 270px;
+  width: 450px;
+  background-image: url(../images/Concept2@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.concept_text2 p {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.concept_text3 p {
+  text-align: center;
+  line-height: 2.3;
+}
+
+.more_btn {
+  position: relative;
+  left: 70%;
+  width: 200px;
+  height: 170px;
+  background-image: url(../images/more_button@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.more_btn:hover {
+  transform: scale(1.1);
+}
+
+.more_btn a {
+  position: absolute;
+  left: 35%;
+  top: 46%;
+  font-size: 14px;
+}
+
+.sp_br {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .concept {
+    max-width: 375px;
+  }
+  .concept_text1 {
+    margin: 0 auto -120px auto;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .concept_text1 p {
+    left: 30%;
+    top: 20%;
+    line-height: 1.75;
+  }
+
+  .concept_text2 {
+    margin: 50px auto -40px auto;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .concept_text2 p {
+    left: 18%;
+    top: 18%;
+    line-height: 1.75;
+  }
+
+  .more_btn {
+    left: 0;
+    margin-left: auto;
+  }
+
+  .sp_br {
+    display: block;
+  }
+}
+
+/* サービス */
+.service {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 100px;
+}
+
+.service_heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service_heading p {
+  font-size: 12px;
+}
+
+.service_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.service_design {
+  margin-right: 90px;
+  width: 50%;
+}
+
+.service_cording {
+  margin-left: 90px;
+  width: 50%;
+}
+
+.service_design img,
+.service_cording img {
+  width: 450px;
+}
+
+.service_design h3,
+.service_cording h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 35px 100px;
+  border-bottom: 2px solid #333;
+}
+
+.service_design p,
+.service_cording p {
+  text-align: left;
+  line-height: 2;
+}
+
+@media screen and (max-width: 850px) {
+  .service {
+    max-width: 375px;
+  }
+
+  .service_wrap {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .service_design,
+  .service_cording {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .service_design img,
+  .service_cording img {
+    width: 200px;
+  }
+
+  .service_design h3,
+  .service_cording h3 {
+    text-align: center;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid #333;
+  }
+
+  .service_design h3 {
+    padding: 35px 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .service_cording h3 {
+    padding: 35px 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .service_design p,
+  .service_cording p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* 作品 */
+.works {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 100px;
+}
+
+.works_heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.works_heading p {
+  font-size: 12px;
+}
+
+.gallery_wrap {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+
+.slick-prev:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(225deg);
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 1;
+}
+
+.slick-next:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
+}
+
+.lb-data .lb-number {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    max-width: 355px;
+  }
+}
+
+/* お問い合わせ */
+.contact {
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 100px;
+}
+
+.contact_heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact_heading p {
+  font-size: 12px;
+}
+
+.contact_text {
+  text-align: center;
+}
+
+.contact_text p {
+  line-height: 2;
+}
+
+.contact_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 130px;
+  background-image: url(../images/contact_button@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 83px;
+  transition: 0.3s;
+}
+
+.contact_btn:hover {
+  transform: scale(1.1);
+}
+
+.contact_btn p {
+  position: absolute;
+  top: 75px;
+  margin-left: -68px;
+  font-size: 14px;
+}
