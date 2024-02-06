@@ -342,6 +342,18 @@
   font-size: 14px;
 }
 
+@media screen and (max-width: 767px) {
+  .fluid {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contact_heading {
+    top: 43%;
+    left: 33%;
+  }
+}
+
 .thanks_message {
   max-width: 488px;
   margin: 135px auto 0px auto;
