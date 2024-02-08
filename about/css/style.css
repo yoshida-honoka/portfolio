@@ -337,7 +337,7 @@
 
   .about_wrap {
     display: block;
-    max-width: 375px;
+    max-width: 355px;
   }
 
   .about_image {
@@ -352,5 +352,6 @@
 
   .about_content {
     width: 100%;
+    margin-top: 50px;
   }
 }

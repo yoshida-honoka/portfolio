@@ -228,14 +228,14 @@ img {
 .main_left_bottom {
   position: absolute;
   width: 60vw;
-  bottom: 0px;
+  bottom: -150px;
   left: 0px;
 }
 
 .main_right_bottom {
   position: absolute;
   width: 60vw;
-  bottom: 0px;
+  bottom: -150px;
   right: 0px;
 }
 
@@ -270,6 +270,28 @@ img {
   100% {
     /* Y軸50px */
     transform: translateY(30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_left_top {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .main_right_top {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .main_left_bottom {
+    width: 70vw;
+    height: 20vh;
+  }
+
+  .main_right_bottom {
+    width: 70vw;
+    height: 20vh;
   }
 }
 

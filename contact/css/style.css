@@ -352,6 +352,33 @@
     top: 43%;
     left: 33%;
   }
+
+  .contact_form {
+    max-width: 355px;
+    margin: 0 auto;
+  }
+
+  .contact_form label {
+    display: block;
+    width: 340px;
+    margin: 0 auto 25px auto;
+    font-size: 14px;
+  }
+
+  .contact_form input {
+    display: block;
+    width: 340px;
+    margin: 0 auto 62px auto;
+    resize: none;
+  }
+
+  .contact_form textarea {
+    display: block;
+    width: 340px;
+    height: 300px;
+    margin: 0 auto 62px auto;
+    resize: none;
+  }
 }
 
 .thanks_message {
