@@ -292,6 +292,8 @@
   width: 400px;
   margin: 0 auto 62px auto;
   resize: none;
+  padding: 7px 7px 5px 7px;
+  border: none;
 }
 
 .contact_form textarea {
@@ -300,6 +302,8 @@
   height: 300px;
   margin: 0 auto 62px auto;
   resize: none;
+  padding: 7px 7px 0 7px;
+  border: none;
 }
 
 #name {
@@ -354,7 +358,7 @@
   }
 
   .contact_form {
-    max-width: 355px;
+    max-width: 335px;
     margin: 0 auto;
   }
 
